@@ -91,3 +91,16 @@ Cargo.lock
 
 # End of https://www.toptal.com/developers/gitignore/api/c++,rust,visualstudiocode,cmake
 
+
+### FROSTGUARD ###
+build/
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.uv-cache*/
+*.uf2
+*.elf
+*.bin
+*.map
+.env
