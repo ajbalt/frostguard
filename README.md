@@ -87,7 +87,7 @@ Dates after Phase 1 follow the official ORBIT schedule and may change. Plans and
 - Development is in WSL2 (Ubuntu). Keep the repo on the Linux filesystem, not under `/mnt/c`.
 - Host tooling is Python managed with `uv`.
 - Firmware targets: Pico SDK 2.x with `rp2350-riscv` (MC, needs a RISC-V GCC) and `rp2350-arm-s` (SC, needs `arm-none-eabi-gcc`).
-- The firmware language is not yet decided (C/C++ with the Pico SDK is the default). Record the choice in `docs/decisions/` before writing firmware.
+- Firmware is written mostly in C/C++ with the Pico SDK (see `docs/decisions/0001-firmware-language.md`). Host tooling stays Python.
 - USB boards are not visible to WSL2 until attached with `usbipd attach --wsl`. Prefer VISA over TCP for instruments.
 - Pure logic (scheduler, reserve, mode state machine) gets native host tests in `tests/host/` before it runs on a board.
 
